@@ -1,0 +1,11 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "plugins": ["prettier", "testing-library"],
+  "overrides": [
+    {
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "plugins": ["jest", "jest-formatting"],
+      "extends": ["plugin:testing-library/react", "plugin:jest/recommended", "plugin:jest-formatting/recommended"]
+    }
+  ]
+}
